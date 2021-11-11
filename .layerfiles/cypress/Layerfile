@@ -1,3 +1,5 @@
 FROM ../base
 
+RUN curl http://localhost:8080
+
 RUN docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.2.0
