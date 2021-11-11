@@ -2,4 +2,8 @@ FROM ../base
 
 RUN curl http://localhost:8080
 
-RUN docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.2.0
+RUN npm install
+
+RUN npm wait-on http://localhost:8080
+
+RUN npx install cypress
