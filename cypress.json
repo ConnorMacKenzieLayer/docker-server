@@ -1,8 +1,7 @@
 {
   "baseUrl": "http://host.docker.internal:8080",
-  "reporter": "junit",
+  "reporter": "cypress-multi-reporters",
   "reporterOptions": {
-    "mochaFile": "cypress/results/test-output-[hash].xml",
-    "toConsole": true
+    "configFile": "reporter-config.json"
   }
 }

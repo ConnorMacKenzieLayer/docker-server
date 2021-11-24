@@ -1,5 +1,5 @@
 FROM ../base
 
-RUN curl http://localhost:8080
+RUN npm install
 
 RUN docker run -it --add-host host.docker.internal:host-gateway -v $PWD:/e2e -w /e2e cypress/included:3.2.0
