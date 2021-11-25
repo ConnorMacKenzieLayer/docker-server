@@ -11,6 +11,12 @@ describe('Visit Home Page', () => {
     expect(true).to.equal(true)
   })
 
+  it('Is styled', () => {
+    cy.visit('/')
+
+    expect(true).to.equal(true)
+  })
+
   it('Has working links', () => {
     cy.visit('/')
 
