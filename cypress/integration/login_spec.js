@@ -17,6 +17,12 @@ describe('Logs into dashbaord', () => {
     expect(true).to.equal(true)
   })
 
+  it('Can log twice', () => {
+    cy.visit('/')
+
+    expect(true).to.equal(true)
+  })
+
   it('Redirects to dashbaord', () => {
     cy.visit('/')
 
