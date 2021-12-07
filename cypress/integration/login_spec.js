@@ -11,7 +11,7 @@ describe('Logs into dashbaord', () => {
     expect(true).to.equal(true)
   })
 
-  it('Can log in', () => {
+  it('Can log in!', () => {
     cy.visit('/')
 
     expect(true).to.equal(true)
