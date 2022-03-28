@@ -1,5 +1,5 @@
 FROM ../base
 
-RUN npm install
+RUN npm install -g http-server
 
 RUN docker run -it --add-host host.docker.internal:host-gateway -v $PWD:/e2e -w /e2e cypress/included:3.2.0
