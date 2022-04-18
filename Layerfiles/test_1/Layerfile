@@ -1,3 +1,6 @@
 FROM ../base
 
+LABEL display_name=test-1
+LABEL status=hidden
+
 RUN echo hello 1
