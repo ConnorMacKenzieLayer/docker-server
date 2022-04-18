@@ -1,0 +1,5 @@
+FROM ../base
+
+LABEL display_name=test
+
+RUN echo hello 1
