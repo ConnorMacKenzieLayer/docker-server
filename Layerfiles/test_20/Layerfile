@@ -1,5 +1,3 @@
 FROM ../base
 
-LABEL display_name=test-2
-
 RUN echo hello 2
