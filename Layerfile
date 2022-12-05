@@ -19,3 +19,5 @@ RUN echo $DEPLOYMENT_HOST
 RUN docker build -t image .
 RUN docker run -d -p 8080:8080 image
 EXPOSE WEBSITE http://localhost:8080
+
+RUN echo $DEPLOYMENT_HOST
