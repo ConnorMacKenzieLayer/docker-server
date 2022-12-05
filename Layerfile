@@ -14,7 +14,7 @@ RUN apt-get update && \
 # copy files from the repository into this staging server
 COPY . .
 
-
+BUILD ENV DEPLOYMENT_HOST
 RUN echo $DEPLOYMENT_HOST
 
 RUN docker build -t image .
