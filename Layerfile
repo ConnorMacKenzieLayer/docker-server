@@ -15,8 +15,6 @@ RUN apt-get update && \
 COPY . .
 
 
-RUN echo testing
-BUILD ENV DEPLOYMENT_HOST
 RUN echo $DEPLOYMENT_HOST
 
 RUN docker build -t image .
