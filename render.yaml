@@ -1,1 +1,8 @@
-
+services:
+  # A Docker web service
+  - type: web
+    name: webdis
+    env: docker
+    repo: https://github.com/ConnorMacKenzieLayer/docker-server.git # optional
+    rootDir: ./
+    dockerCommand: docker run -d -p 8080:8080 image
