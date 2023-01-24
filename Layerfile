@@ -14,18 +14,9 @@ RUN apt-get update && \
 # copy files from the repository into this staging server
 COPY . .
 
-BUILD ENV DEPLOYMENT_HOST
-BUILD ENV SUBDOMAIN
-BUILD ENV GIT_BRANCH
-BUILD ENV RUNNER_ID
-BUILD ENV EXPOSE_WEBSITE_HOST
-
-RUN echo $DEPLOYMENT_HOST
-RUN echo $SUBDOMAIN
-RUN echo $GIT_BRANCH
-RUN echo $RUNNER_ID
-RUN echo $EXPOSE_WEBSITE_HOST
-
 RUN docker build -t image .
 RUN docker run -d -p 8080:8080 image
+
+BUTTON View preview env?
+
 EXPOSE WEBSITE http://localhost:8080
